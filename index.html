@@ -10,56 +10,57 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
 
 <style>
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-margin: 0;
-min-height: 100vh;
-display: flex;
-justify-content: center;   /* centraliza horizontal */
-align-items: flex-start;   /* começa do topo */
-background: #ffffff;
-font-family: 'Merriweather', serif;
-}
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;   /* centraliza horizontal */
+    align-items: flex-start;   /* começa do topo */
+    background: #ffffff;
+    font-family: 'Merriweather', serif;
+  }
 
-.top-wrapper {
-width: 100%;
-max-width: 430px;          /* força um “mobile” no meio da tela */
-padding: 40px 20px;
-}
-
-.brand-title {
-  font-weight: 700;
-  font-size: 32px;       /* ajuste para ficar igual ao print */
-  letter-spacing: -0.06em; /* ~ -6% ≈ “-63” do Canva */
-  line-height: 1.1;
-  white-space: nowrap;
-}
-
-/* Opcional: responsivo para telas menores */
-@media (max-width: 480px) {
   .top-wrapper {
-    padding: 32px 16px;
+    width: 100%;
+    max-width: 430px;          /* “mobile” no meio da tela */
+    padding: 40px 20px;
+  }
+
+  .brand-card {
+    background: #001f1a;
+    color: #ffffff;
+    border-radius: 28px;
+    padding: 44px 128px 52px 36px; /* grande e puxado pro topo/esquerda */
+    display: inline-block;
+    transform: scale(1.2);
+    transform-origin: top left;
   }
 
   .brand-title {
-    font-size: 26px;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.06em;
+    line-height: 1.1;
+    white-space: nowrap;
   }
-}
 
-.brand-card {
-background: #001f1a;
-color: #ffffff;
-border-radius: 28px;
-padding: 44px 128px 52px 36px; /* grande e puxado pro topo/esquerda */
-display: inline-block;
-}
+  @media (max-width: 480px) {
+    .top-wrapper {
+      padding: 32px 16px;
+    }
 
+    .brand-title {
+      font-size: 26px;
+    }
+  }
 </style>
+
 </head>
 <body>
 <div class="top-wrapper">
