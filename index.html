@@ -17,18 +17,19 @@ padding: 0;
 }
 
 body {
-  min-height: 100vh;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  font-family: 'Merriweather', serif;
+margin: 0;
+min-height: 100vh;
+display: flex;
+justify-content: center;   /* centraliza horizontal */
+align-items: flex-start;   /* começa do topo */
+background: #ffffff;
+font-family: 'Merriweather', serif;
 }
 
 .top-wrapper {
-  width: 100%;
-  max-width: 768px;      /* parecido com o mock em mobile grande */
-  padding: 40px 20px;    /* espaço até o card */
+width: 100%;
+max-width: 430px;          /* força um “mobile” no meio da tela */
+padding: 40px 20px;
 }
 
 .brand-title {
@@ -45,20 +46,16 @@ body {
     padding: 32px 16px;
   }
 
-
   .brand-title {
     font-size: 26px;
   }
 }
 
 .brand-card {
-  background:#02221D;
-  color: #ffffff;
-  border-radius: 18px;
-  padding: 24px 110px 52px 36px;
-  
-*/* top right bottom left */*
-
+background: #001f1a;
+color: #ffffff;
+border-radius: 28px;
+padding: 44px 128px 52px 36px; /* grande e puxado pro topo/esquerda */
 display: inline-block;
 }
 
