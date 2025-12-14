@@ -5,36 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Investor</title>
 
-  <!-- Merriweather from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+  <!-- Merriweather -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
 
   <style>
     body {
+      margin: 0;
       background: #ffffff;
+      color: #111;
       font-family: 'Merriweather', serif;
-      padding: 40px;
     }
 
-    .logo-box{
-      border-radius: 18px;
-      padding: 22px 28px;
-      display: inline-block;
+    /* Header */
+    header {
+      padding: 48px 0 28px;
+      text-align: center;
+      border-bottom: 1px solid #e5e5e5;
     }
 
     .logo-text {
-      color: black;
-      font-weight: 900;              /* Bold/Black look */
-      font-size: 48px;
-      letter-spacing: -0.063em;      /* equivalent of -63 */
+      font-weight: 900;
+      font-size: 56px;
+      letter-spacing: -0.063em;
       line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    nav {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      margin: 0 16px;
+      text-decoration: none;
+      color: #111;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main */
+    main {
+      max-width: 820px;
+      margin: 70px auto;
+      padding: 0 24px;
+    }
+
+    article h1 {
+      font-size: 38px;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 36px;
+    }
+
+    article p {
+      font-size: 19px;
+      line-height: 1.75;
+      margin-bottom: 26px;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: #e5e5e5;
+      margin: 60px 0;
+    }
+
+    /* Footer */
+    footer {
+      padding: 36px;
+      border-top: 1px solid #e5e5e5;
+      text-align: center;
+      font-size: 13px;
+      color: #777;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="logo-box">
-    <span class="logo-text">The Investor</span>
-  </div>
+<header>
+  <div class="logo-text">The Investor</div>
+  <nav>
+    <a href="#">Markets</a>
+    <a href="#">Politics</a>
+    <a href="#">Business</a>
+    <a href="#">Opinion</a>
+    <a href="#">Culture</a>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <h1>Global Markets Brace for a Volatile Quarter Ahead</h1>
+    <div class="meta">By Editorial Desk · December 2025</div>
+
+    <p>
+      Investors entered the final quarter of the year confronting a volatile mix
+      of inflationary pressure, geopolitical uncertainty, and tightening monetary
+      policy across major economies.
+    </p>
+
+    <p>
+      Analysts warn that while equity markets have shown resilience, underlying
+      fundamentals suggest caution rather than confidence should guide capital
+      allocation strategies.
+    </p>
+
+    <p>
+      The coming months are expected to test not only portfolios, but the broader
+      assumptions that have driven market optimism since the post-pandemic recovery.
+    </p>
+  </article>
+
+  <div class="divider"></div>
+
+  <article>
+    <h1>Central Banks Signal Patience Amid Policy Crossroads</h1>
+    <div class="meta">Analysis · December 2025</div>
+
+    <p>
+      Monetary authorities across Europe and North America are increasingly signaling
+      a slower approach to interest-rate adjustments, citing mixed economic indicators
+      and fragile consumer confidence.
+    </p>
+  </article>
+</main>
+
+<footer>
+  © 2025 The Investor · Independent Financial Journalism
+</footer>
 
 </body>
 </html>
