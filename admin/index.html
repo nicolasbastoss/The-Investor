@@ -4,10 +4,44 @@
     <meta charset="utf-8">
     <title>Admin</title>
 
-    <!-- Decap CMS via jsDelivr (more reliable) -->
-    <script src="https://cdn.jsdelivr.net/npm/decap-cms@3/dist/decap-cms.js"></script>
+    <!-- Tell Decap we will initialize it manually -->
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
   </head>
+
   <body>
-    <noscript>You need JavaScript enabled.</noscript>
+    <!-- This MUST exist -->
+    <div id="nc-root"></div>
+
+    <!-- Load Decap CMS -->
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@3/dist/decap-cms.js"></script>
+
+    <!-- Initialize AFTER the DOM exists -->
+    <script>
+      window.CMS.init({
+        config: {
+          backend: {
+            name: "git-gateway",
+            branch: "main"
+          },
+          media_folder: "images",
+          public_folder: "/images",
+          collections: [
+            {
+              name: "articles",
+              label: "Articles",
+              folder: "articles",
+              create: true,
+              fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Image", name: "image", widget: "image", required: false },
+                { label: "Body", name: "body", widget: "markdown" }
+              ]
+            }
+          ]
+        }
+      });
+    </script>
   </body>
 </html>
