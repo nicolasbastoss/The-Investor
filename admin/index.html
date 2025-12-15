@@ -2,17 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Admin Test</title>
-  </head>
-  <body style="font-family: sans-serif">
-    <h1>ADMIN FILE IS LOADING</h1>
-    <p>If you see this, Netlify is serving the file correctly.</p>
+    <title>Admin</title>
 
-    <script>
-      document.body.insertAdjacentHTML(
-        "beforeend",
-        "<p>JavaScript is running.</p>"
-      );
-    </script>
+    <!-- Decap CMS via jsDelivr (more reliable) -->
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@3/dist/decap-cms.js"></script>
+  </head>
+  <body>
+    <noscript>You need JavaScript enabled.</noscript>
   </body>
 </html>
